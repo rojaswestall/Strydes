@@ -21,7 +21,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>Material Design Lite</title>
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -111,10 +110,12 @@
     </div>
     <main class="mdl-layout__content mdl-color--grey-100">
       <div class="mdl-grid demo-content">
+
+
+      <!-- The Wheel Slider!! -->
         <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
 
-
-          <div class="center-content">
+          <div class="center-content" viewBox="0 0 500 250">
             <div class="wheel">
               <div class="progress"></div>
               <div class="center">
@@ -124,18 +125,33 @@
             </div>
           </div>
 
-
         </div>
+
+
 
 
         <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
+          <div class="center-content" viewBox="0 0 500 250">
+            <div class="wheel">
+              <div class="progress"></div>
+              <div class="center">
+                <span class="value"></span>
+              </div>
+              <a href="javascript:void(0)" class="handle"></a>
+            </div>
+          </div>
+
           <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
             <use xlink:href="#chart" />
           </svg>
+
           <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
             <use xlink:href="#chart" />
           </svg>
+
         </div>
+
+
         <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
           <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
             <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
@@ -238,6 +254,7 @@
   </svg>
   <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">View Source</a>
 
+<!-- Scripts added for the circle slider -->
   <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
@@ -256,6 +273,7 @@
     });
   </script>
 
+<!-- Script for the template -->
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
