@@ -266,11 +266,15 @@
         max: 360,
         step: 5,
         onChange: function (value) {
-          $(".wheel .value").html(Math.round(value) + "&deg;");
+          $(".wheel .value").html(mood(value));
         }
       });
     });
   </script>
+
+  <!-- Math.round(value) + "&deg;" -->
+
+
 
 <!-- Script for the template -->
   <script type="text/javascript">
