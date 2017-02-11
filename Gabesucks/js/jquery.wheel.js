@@ -10,13 +10,13 @@ function mood(val) {
     return " "
   }
   else if (val>=1 && val<120) {
-    return "bad"
+    return "Bad"
   }
   else if (val>=120 && val<240) {
-    return "ok"
+    return "Ok"
   }
   else if (val>=240 && val<360) {
-    return "good"
+    return "Good"
   }
 }
 
