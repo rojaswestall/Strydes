@@ -44,11 +44,11 @@ header {
     text-align: center;
     color: #fff;
     background: #ff7e5f; /* fallback for old browsers */
-    background: -webkit-linear-gradient(#ff7e5f 10%, #feb47b 90%);
-    background: -moz-linear-gradient(#ff7e5f 10%, #feb47b 90%);
-    background: -ms-linear-gradient(#ff7e5f 10%, #feb47b 90%);
-    background: -o-linear-gradient(#ff7e5f 10%, #feb47b 90%);
-    background: linear-gradient(#ff7e5f 10%, #feb47b 90%);
+    background: -webkit-linear-gradient(#fc7655 10%, #feb47b 90%);
+    background: -moz-linear-gradient(#fc7655 10%, #feb47b 90%);
+    background: -ms-linear-gradient(#fc7655 10%, #feb47b 90%);
+    background: -o-linear-gradient(#fc7655 10%, #feb47b 90%);
+    background: linear-gradient(#fc7655 10%, #feb47b 90%);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -84,15 +84,12 @@ header .header-content .header-content-inner p {
     min-height: auto;
     text-align: center;
     color: #fff;
-
     background: blue;
     background: -webkit-linear-gradient(#085078 10%, #85d8ce 90%);
     background: -moz-linear-gradient(#085078 10%, #85d8ce 90%);
     background: -ms-linear-gradient(#085078 10%, #85d8ce 90%);
     background: -o-linear-gradient(#085078 10%, #85d8ce 90%);
     background: linear-gradient(#085078 10%, #85d8ce 90%);
-
-
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -105,14 +102,13 @@ header .header-content .header-content-inner p {
 
 .aboutus-header{
 
-
   position: relative;
   width: 100%;
   min-height: auto;
   text-align: center;
   color: #fff;
 
-  background: blue;
+  background: purple;
   background: -webkit-linear-gradient(#6441A5 10%, #c1a0ff 90%);
   background: -moz-linear-gradient(#6441A5 10%, #c1a0ff 90%);
   background: -ms-linear-gradient(#6441A5 10%, #c1a0ff 90%);
