@@ -113,11 +113,11 @@ header .header-content .header-content-inner p {
   color: #fff;
 
   background: blue;
-  background: -webkit-linear-gradient(#232526 10%, #414345 90%);
-  background: -moz-linear-gradient(#232526 10%, #414345 90%);
-  background: -ms-linear-gradient(#232526 10%, #414345 90%);
-  background: -o-linear-gradient(#232526 10%, #414345 90%);
-  background: linear-gradient(#232526 10%, #414345 90%);
+  background: -webkit-linear-gradient(#6441A5 10%, #c1a0ff 90%);
+  background: -moz-linear-gradient(#6441A5 10%, #c1a0ff 90%);
+  background: -ms-linear-gradient(#6441A5 10%, #c1a0ff 90%);
+  background: -o-linear-gradient(#6441A5 10%, #c1a0ff 90%);
+  background: linear-gradient(#6441A5 10%, #c1a0ff 90%);
 
 
   background-position: center;
@@ -189,7 +189,7 @@ header .header2-content .header2-content-inner p {
 
 .intro {
 	color: #fff;
-    background-color: yellowgreen;
+
     padding: 70px 0;
     text-align: center;
 }
@@ -198,23 +198,6 @@ header .header2-content .header2-content-inner p {
     padding: 100px 0;
 }
 
-.content-2 {
-	color: #fff;
-    background-color: #222;
-}
-
-
-
-.promo,
-.promo h3,
-.promo a:link,
-.promo a:visited,
-.promo a:hover,
-.promo a:active {
-    color: white;
-	text-shadow: 0px 0px 40px black;
-    text-decoration: none;
-}
 
 .page-footer {
 	text-align: center;
@@ -229,12 +212,6 @@ header .header2-content .header2-content-inner p {
 .page-footer .contact p {
 	font-size: 22px;
 	font-weight: 300;
-	}
-
-.content-3 .glyphicon,
-.page-footer .contact .glyphicon {
-	font-size: 32px;
-	font-weight: 700;
 	}
 
 .page-footer .small-print {
