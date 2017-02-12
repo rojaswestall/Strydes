@@ -3,6 +3,21 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+
+}
+
+#navbar{
+  font-size: 20px;
+}
+#brand {
+  font-size: 25px;
+}
+#mainpageinfo {
+  font-size: 25px;
+}
+
+#titlemainpage{
+  font-size: 105px;
 }
 
 a {
@@ -57,7 +72,7 @@ header .header-content .header-content-inner h1 {
 
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 300;
     color: rgba(255,255,255,.7);
 }
@@ -149,12 +164,12 @@ header .header2-content .header2-content-inner p {
     margin-bottom: 20px;
 }
 
-.intro {
+/*.intro {
 	color: #fff;
     background-color: yellowgreen;
     padding: 70px 0;
-    text-align: center;
-}
+    text-align: center;*/
+/*}
 
 .content {
     padding: 100px 0;
@@ -168,9 +183,9 @@ header .header2-content .header2-content-inner p {
 .content-3 {
 	padding: 20px 0 40px;
 	text-align: center;
-}
+}*/
 
-.promo,
+/*.promo,
 .promo h3,
 .promo a:link,
 .promo a:visited,
@@ -179,27 +194,9 @@ header .header2-content .header2-content-inner p {
     color: white;
 	text-shadow: 0px 0px 40px black;
     text-decoration: none;
-}
+}*/
 
-.item-1 {
-	background: url('../images/writing.jpg');
-	}
-
-.item-2 {
-	background: url('../images/concert.jpg');
-	}
-
-.item-3 {
-	background: url('../images/pencil_sharpener.jpg');
-	}
-
-.item-1,
-.item-2,
-.item-3 {
-	background-size: cover;
-	background-position: 50% 50%;
-	}
-
+/*
 .page-footer {
 	text-align: center;
 	}
@@ -224,7 +221,7 @@ header .header2-content .header2-content-inner p {
 .page-footer .small-print {
 	padding: 50px 0 40px;
 	font-weight: 300;
-	}
+	}*/
 
 .text-light {
     color: rgba(255,255,255,.7);
@@ -239,7 +236,7 @@ header .header2-content .header2-content-inner p {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    color: yellowgreen;
+    color: white;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
