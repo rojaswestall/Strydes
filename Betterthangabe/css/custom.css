@@ -83,7 +83,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background: #ff7e5f; /* fallback for old browsers */
+    background: #022133; /* fallback for old browsers */
     background: -webkit-linear-gradient(#022133 10%, #085078 90%);
     background: -moz-linear-gradient(#022133 10%, #085078 90%);
     background: -ms-linear-gradient(#022133 10%, #085078 90%);
