@@ -100,6 +100,17 @@ header .header-content .header-content-inner p {
 
 }
 
+header .feelings2-header {
+    background: -webkit-linear-gradient(#085078 10%, #85d8ce 90%);
+    background: -moz-linear-gradient(#085078 10%, #85d8ce 90%);
+    background: -ms-linear-gradient(#085078 10%, #85d8ce 90%);
+    background: -o-linear-gradient(#085078 10%, #85d8ce 90%);
+    background: linear-gradient(#085078 10%, #85d8ce 90%);
+
+
+
+}
+
 .aboutus-header{
 
   position: relative;
