@@ -6,6 +6,43 @@ body {
 
 }
 
+
+
+.semi-transparent-button {
+  font-size: 20px;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 200px;
+  background: #fff; /* fallback color for old browsers */
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+
+
+}
+
+.semi-transparent-button:hover,
+.semi-transparent-button:focus,
+.semi-transparent-button:active {
+  background: #fff;
+  color: #000;
+  transition: all 0.5s ease-in;
+}
+
+
+
+
+
+
+
 #navbar{
   font-size: 20px;
 }
@@ -14,6 +51,7 @@ body {
 }
 #mainpageinfo {
   font-size: 25px;
+  color: white;
 }
 
 #titlemainpage{
@@ -35,7 +73,9 @@ a:focus {
 p {
     font-size: 16px;
     line-height: 1.5;
+    color: white;
 }
+
 
 header {
     position: relative;
@@ -44,11 +84,11 @@ header {
     text-align: center;
     color: #fff;
     background: #ff7e5f; /* fallback for old browsers */
-    background: -webkit-linear-gradient(#fc7655 10%, #feb47b 90%);
-    background: -moz-linear-gradient(#fc7655 10%, #feb47b 90%);
-    background: -ms-linear-gradient(#fc7655 10%, #feb47b 90%);
-    background: -o-linear-gradient(#fc7655 10%, #feb47b 90%);
-    background: linear-gradient(#fc7655 10%, #feb47b 90%);
+    background: -webkit-linear-gradient(#022133 10%, #085078 90%);
+    background: -moz-linear-gradient(#022133 10%, #085078 90%);
+    background: -ms-linear-gradient(#022133 10%, #085078 90%);
+    background: -o-linear-gradient(#022133 10%, #085078 90%);
+    background: linear-gradient(#022133 10%, #085078 90%);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -77,7 +117,7 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255,.7);
 }
 
-
+/*
 .feelings-header {
     position: relative;
     width: 100%;
@@ -85,11 +125,11 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     background: blue;
-    background: -webkit-linear-gradient(#085078 10%, #85d8ce 90%);
-    background: -moz-linear-gradient(#085078 10%, #85d8ce 90%);
-    background: -ms-linear-gradient(#085078 10%, #85d8ce 90%);
-    background: -o-linear-gradient(#085078 10%, #85d8ce 90%);
-    background: linear-gradient(#085078 10%, #85d8ce 90%);
+    background: -webkit-linear-gradient(#00441e 10%, #017705 90%);
+    background: -moz-linear-gradient(#00441e 10%, #017705 90%);
+    background: -ms-linear-gradient(#00441e 10%, #017705 90%);
+    background: -o-linear-gradient(#00441e 10%, #017705 90%);
+    background: linear-gradient(#00441e 10%, #017705 90%);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -98,7 +138,7 @@ header .header-content .header-content-inner p {
 
 
 
-}
+}*/
 
 header .feelings2-header {
     background: -webkit-linear-gradient(#085078 10%, #85d8ce 90%);
@@ -111,7 +151,7 @@ header .feelings2-header {
 
 }
 
-.aboutus-header{
+/*.aboutus-header{
 
   position: relative;
   width: 100%;
@@ -120,11 +160,11 @@ header .feelings2-header {
   color: #fff;
 
   background: purple;
-  background: -webkit-linear-gradient(#6441A5 10%, #c1a0ff 90%);
-  background: -moz-linear-gradient(#6441A5 10%, #c1a0ff 90%);
-  background: -ms-linear-gradient(#6441A5 10%, #c1a0ff 90%);
-  background: -o-linear-gradient(#6441A5 10%, #c1a0ff 90%);
-  background: linear-gradient(#6441A5 10%, #c1a0ff 90%);
+  background: -webkit-linear-gradient(#2e1d4c  10%, #482d77 90%);
+  background: -moz-linear-gradient(#2e1d4c  10%, #482d77 90%);
+  background: -ms-linear-gradient(#2e1d4c  10%, #482d77 90%);
+  background: -o-linear-gradient(#2e1d4c  10%, #482d77 90%);
+  background: linear-gradient(#2e1d4c  10%, #482d77 90%);
 
 
   background-position: center;
@@ -132,7 +172,7 @@ header .feelings2-header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}
+}*/
 
 
 header .header2-content {
@@ -203,6 +243,8 @@ header .header2-content .header2-content-inner p {
 
 .content {
     padding: 100px 0;
+    border-radius: 8px;
+    border: 1px solid #fff;
 }
 
 
@@ -212,8 +254,8 @@ header .header2-content .header2-content-inner p {
 
 .page-footer .contact {
 	padding: 100px 0;
-	background-color: yellowgreen;
-	color: #fff;
+  border-radius: 8px;
+  border: 1px solid #fff;
 	}
 
 .page-footer .contact p {
@@ -472,7 +514,7 @@ img::-moz-selection {
 body{background:white}
 svg{
 	cursor:pointer;
-	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-tap-highlight-color:black;
 }
 #text{
 	fill:#085078;
@@ -485,7 +527,7 @@ svg{
 	user-select: none;
 }
 #circle{
-	stroke:#085078;
+	stroke:orange;
 	stroke-width:20;
 	stroke-dasharray:502;
 }
