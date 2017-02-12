@@ -478,3 +478,30 @@ img::-moz-selection {
 .bg-primary {
     background-color: yellowgreen;
 }
+
+
+// For the circle slider : )
+body{background:black}
+svg{
+	cursor:pointer;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#text{
+	fill:white;
+	font:normal 60px Arial;
+	font-weight:bold;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#circle{
+	stroke:lavender;
+	stroke-width:20;
+	stroke-dasharray:502;
+}
+.setting{
+	cursor:-webkit-grabbing;
+	cursor:-moz-grabbing;
+	cursor:grabbing;
+}
