@@ -1,0 +1,310 @@
+body ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #888888;
+  font-weight: 300;
+  vertical-align: top;
+}
+body :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #888888;
+  opacity: 1;
+  font-weight: 300;
+  vertical-align: top;
+}
+body ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #888888;
+  opacity: 1;
+  font-weight: 300;
+  vertical-align: top;
+}
+body :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #888888;
+  font-weight: 300;
+  vertical-align: top;
+}
+
+.feelings-questions {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 500px;
+  text-align: center;
+  background: white;
+  margin: 20px;
+  border-style: solid;
+  border-color: yellowgreen;
+  border-width: thick;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  float: left;
+}
+
+.feelings-questions:hover {
+  background: yellowgreen;
+  border-color: yellowgreen;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.feelings-questions:active {
+    background: #fff;
+    color: #000;
+    transition: all 0.5s ease-in;
+}
+
+/*#question-title {
+  text-align: center;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #085078;
+  vertical-align: middle;
+  padding: 0px;
+  margin: 15px;
+}
+.question-popup {
+  position: relative;
+  cursor: pointer;
+}
+.question-popup .popupwindow {
+  visibility: hidden;
+  width: 1000px;
+  height: 500px;
+  /*background-color: #fff;*/
+  /*
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: -300%;
+  left: 50%;
+  margin-left: 50px;
+  margin-top: 500px;
+  border-style: solid;
+  border-width: thick;
+  border-color: #fff;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  background-color: white;
+}
+/* Popup arrow */
+/*.question-popup .popupwindow::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    margin-left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}*/
+
+/* Toggle this class - hide and show the popup */
+/*
+.question-popup .show {
+    visibility: visible;
+    /*-webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;*/
+}
+
+/* Add animation (fade in the popup) */
+/*
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+.answer {
+  width: 1000px;
+  height: 300px;
+  font-size: 20px;
+  text-align: left;
+  vertical-align: top;
+  margin-top: -300px;
+  margin-left: -15px;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+/* question save button */
+
+/*.save-button {
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 8px;
+  width: 60%;
+  max-width: 200px;
+  background: #fff; /* fallback color for old browsers
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  color: #000;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  height: 50px;
+  border-color: #000;
+  border-style: solid;
+}*/
+
+.save-button {
+  background: #fff;
+  border-color: #08507B;
+  border-style: solid;
+  border-width: thick;
+  /*background: -webkit-linear-gradient(#085078 10%, #85d8ce 90%);*/
+  color: #08507B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    margin-top: -485px;
+    margin-left: 575px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.savebtn {
+  background: #085078;
+  border-color: #08507B;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.savebtn:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  background: #085078;
+  color: #fff;
+}
+.savebtn:focus {
+  outline: none;
+  background: #085078;
+  color: #fff;
+}
+.savebtn:active {
+  background: #085078;
+  color: #fff;
+  /*transition: all 0.5s ease-in;*/
+}
+
+#question {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: -200px;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.questions-container {
+  width: 100px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    height: 80%;
+    color: black;
+}
+
+/* The Close Button */
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  font-size: 30px;
+  text-align: center;
+  background: white;
+  color: #085078;
+  margin: 15px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  border-style: solid;
+  border-color: yellowgreen;
+  border-width: thick;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.btn:hover {
+  background-color: yellowgreen!important;
+  color: #085078;
+}
+
+/*Get rid of the blue selection boxes*/
+#myBtn-1:focus {
+  outline: none;
+}
+
+#myBtn-2:focus {
+  outline: none;
+}
+
+#myBtn-3:focus {
+  outline: none;
+}
+
+p5 {
+  color: #085078;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.answer {
+  margin-top: 20px;
+  width: 80%;
+  text-align: left;
+  height: 200px;
+  border-color: #085078;
+  border-style: solid;
+  border-width: thin;
+  padding: 5px;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.answer:focus {
+  outline: none;
+}

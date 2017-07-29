@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Strydes</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <link href="css/calendar.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Custom Fonts from Google -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Circle Slider with pictures CSS -->
+  <!-- <link rel="stylesheet" href="css/circleslider.css" type="text/css" media="screen"/> -->
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Logo and responsive toggle -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="brand" href="index.html">
+          <span class="glyphicon glyphicon-fire"></span>
+          STRYDES
+        </a>
+      </div>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="aboutus.html">About Us</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="about-us">
+              <li><a href="feelings.html">Mood</a></li>
+              <li><a href="calendar.html">Calendar</a></li>
+              <li><a href="questions.html">Questions</a></li>
+
+            </ul>
+          </li>
+          <li>
+            <a href="login.html">Log In</a>
+          </li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+
+
+  <!-- Header -->
+  <header>
+    <div class="header2-content">
+      <div class="header2-content-inner">
+
+        <div class="calendar">
+
+          <div class="prompt">
+            <h1>History</h1>
+            <p> Select a date below to view your past moods and answers. </p>
+          </div>
+          <!-- <header> -->
+          <!-- <h2 class="cal-header">September</h2> -->
+
+          <!-- <a class="btn-prev fontawesome-angle-left" href="#"></a>
+          <div class="cal-header fontawesome">SEPTEMBER</div>
+          <a class="btn-next fontawesome-angle-right" href="#"></a> -->
+          <a class="btn-prev" href="#"><</a>
+          <div class="cal-header">MARCH</div>
+          <a class="btn-next" href="#">></a>
+
+          <!-- </header> -->
+
+          <table class="days">
+
+            <thead>
+              <tr>
+                <td class="day-heading">Su</td>
+                <td class="day-heading">Mo</td>
+                <td class="day-heading">Tu</td>
+                <td class="day-heading">We</td>
+                <td class="day-heading">Th</td>
+                <td class="day-heading">Fr</td>
+                <td class="day-heading">Sa</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="prev-month">26</td>
+                <td class="prev-month">27</td>
+                <td class="prev-month">28</td>
+                <td><button class="event" id="myBtn-1">1</button></td>
+                <td><button class="event" id="myBtn-2">2</button></td>
+                <td><button class="event" id="myBtn-3">3</button></td>
+                <td><button class="event" id="myBtn-4">4</button></td>
+              </tr>
+              <tr>
+                <td><button class="event" id="myBtn-5">5</button></td>
+                <td><button class="event" id="myBtn-6">6</button></td>
+                <td><button class="event" id="myBtn-7">7</button></td>
+                <td><button class="event" id="myBtn-8">8</button></td>
+                <td class="current-day">9</td>
+                <td>10</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td class="next-month">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- calendar -->
+
+        <!-- The Modal -->
+  			<div id="myModal-1" class="modal">
+  				<!-- Modal content -->
+  				<div class="modal-content">
+  					<div>
+  						<p5>March 1, 2017</p5>
+  						<span id="close-1" class="close">&times;</span>
+  					</div>
+  					<div class="calLeft">
+  						<canvas id="myCanvas-1" width=300px height=300px>60</canvas>
+  					</div>
+  					<div class="calRight">
+  						<div style="height: 110px;">
+  							<button class="small-circle" id="q1-1">Q1</button>
+  							<button class="small-circle" id="q2-1">Q2</button>
+  							<button class="small-circle" id="q3-1">Q3</button>
+  						</div>
+  						<div class="question" id="Doctor-question-1"></div>
+  						<div class="response" id="User-response-1"></div>
+  					</div>
+  				</div>
+  			</div> <!-- Modal -->
+
+        <div id="myModal-2" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div>
+              <p5>March 2, 2017</p5>
+              <span id="close-2" class="close">&times;</span>
+            </div>
+            <div class="calLeft">
+              <canvas id="myCanvas-2" width=300px height=300px>60</canvas>
+            </div>
+            <div class="calRight">
+              <div style="height: 110px;">
+                <button class="small-circle" id="q1-2">Q1</button>
+                <button class="small-circle" id="q2-2">Q2</button>
+                <button class="small-circle" id="q3-2">Q3</button>
+              </div>
+              <div class="question" id="Doctor-question-2"></div>
+              <div class="response" id="User-response-2"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="myModal-3" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div>
+              <p5>March 3, 2017</p5>
+              <span id="close-3" class="close">&times;</span>
+            </div>
+            <div class="calLeft">
+              <canvas id="myCanvas-3" width=300px height=300px>60</canvas>
+            </div>
+            <div class="calRight">
+              <div style="height: 110px;">
+                <button class="small-circle" id="q1-3">Q1</button>
+                <button class="small-circle" id="q2-3">Q2</button>
+                <button class="small-circle" id="q3-3">Q3</button>
+              </div>
+              <div class="question" id="Doctor-question-3"></div>
+              <div class="response" id="User-response-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="myModal-4" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div>
+              <p5>March 4, 2017</p5>
+              <span id="close-4" class="close">&times;</span>
+            </div>
+            <div class="calLeft">
+              <canvas id="myCanvas-4" width=300px height=300px>60</canvas>
+            </div>
+            <div class="calRight">
+              <div style="height: 110px;">
+                <button class="small-circle" id="q1-4">Q1</button>
+                <button class="small-circle" id="q2-4">Q2</button>
+                <button class="small-circle" id="q3-4">Q3</button>
+              </div>
+              <div class="question" id="Doctor-question-4"></div>
+              <div class="response" id="User-response-4"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="myModal-5" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div>
+              <p5>March 5, 2017</p5>
+              <span id="close-5" class="close">&times;</span>
+            </div>
+            <div class="calLeft">
+              <canvas id="myCanvas-5" width=300px height=300px>60</canvas>
+            </div>
+            <div class="calRight">
+              <div style="height: 110px;">
+                <button class="small-circle" id="q1-5">Q1</button>
+                <button class="small-circle" id="q2-5">Q2</button>
+                <button class="small-circle" id="q3-5">Q3</button>
+              </div>
+              <div class="question" id="Doctor-question-5"></div>
+              <div class="response" id="User-response-5"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="myModal-6" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div>
+              <p5>March 6, 2017</p5>
+              <span id="close-6" class="close">&times;</span>
+            </div>
+            <div class="calLeft">
+              <canvas id="myCanvas-6" width=300px height=300px>60</canvas>
+            </div>
+            <div class="calRight">
+              <div style="height: 110px;">
+                <button class="small-circle" id="q1-6">Q1</button>
+                <button class="small-circle" id="q2-6">Q2</button>
+                <button class="small-circle" id="q3-6">Q3</button>
+              </div>
+              <div class="question" id="Doctor-question-6"></div>
+              <div class="response" id="User-response-6"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="myModal-7" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div>
+              <p5>March 7, 2017</p5>
+              <span id="close-7" class="close">&times;</span>
+            </div>
+            <div class="calLeft">
+              <canvas id="myCanvas-7" width=300px height=300px>60</canvas>
+            </div>
+            <div class="calRight">
+              <div style="height: 110px;">
+                <button class="small-circle" id="q1-7">Q1</button>
+                <button class="small-circle" id="q2-7">Q2</button>
+                <button class="small-circle" id="q3-7">Q3</button>
+              </div>
+              <div class="question" id="Doctor-question-7"></div>
+              <div class="response" id="User-response-7"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="myModal-8" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div>
+              <p5>March 8, 2017</p5>
+              <span id="close-8" class="close">&times;</span>
+            </div>
+            <div class="calLeft">
+              <canvas id="myCanvas-8" width=300px height=300px>60</canvas>
+            </div>
+            <div class="calRight">
+              <div style="height: 110px;">
+                <button class="small-circle" id="q1-8">Q1</button>
+                <button class="small-circle" id="q2-8">Q2</button>
+                <button class="small-circle" id="q3-8">Q3</button>
+              </div>
+              <div class="question" id="Doctor-question-8"></div>
+              <div class="response" id="User-response-8"></div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- innerHeader -->
+    </div>
+  </header>
+
+
+  <!-- Footer -->
+  <!-- <footer class="page-footer"> -->
+
+
+  <!-- Copyright etc -->
+  <!-- <div class="small-print">
+  <div class="container">
+  <p>Copyright &copy; strydes.com 2015</p>
+</div>
+</div> -->
+
+<!-- </footer> -->
+
+<!-- jQuery -->
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Custom Javascript -->
+<script src="js/custom.js"></script>
+
+<script src="js/calendar.js"></script>
+
+
+<!-- Circle Slider JS-->
+
+<!-- Scripts added for the circle slider -->
+<!-- <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="js/jquery.wheel.js"></script>
+
+<script>
+$(function () {
+$(".wheel").wheel({
+min: 0,
+max: 360,
+step: 5,
+onChange: function (value) {
+$(".wheel .value").html(mood(value));
+}
+});
+});
+</script> -->
+
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+<!-- <script src="js/circleslider.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+var $slider = $('#rotatescroll');
+$slider.tinycircleslider({ interval: true, dotsSnap: true, dotsHide: false });
+
+var slider = $slider.data("plugin_tinycircleslider");
+});
+</script> -->
+
+</body>

@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+*[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+
+}
+
+/* ---------- GENERAL ---------- */
+
+
+body {
+  background: blue;
+  background: -webkit-linear-gradient(#022133 10%, #085078 90%);
+  background: -moz-linear-gradient(#022133 10%, #085078 90%);
+  background: -ms-linear-gradient(#022133 10%, #085078 90%);
+  background: -o-linear-gradient(#022133 10%, #085078 90%);
+  background: linear-gradient(#022133 10%, #085078 90%);
+
+  color: white;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  margin: 0;
+}
+
+a {
+ text-decoration: none;
+}
+
+h2 {
+ font-size: 50px;
+ line-height: 1.25em;
+ margin: .25em 0;
+}
+
+h3 {
+ font-size: 1.5em;
+ line-height: 1em;
+ margin: .33em 0;
+}
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+/*.container {
+ height: 538px;
+ left: 50%;
+ margin: -255px 0 0 -245px;
+ position: absolute;
+ top: 50%;
+ width: 510px;
+}*/
+
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+ text-align: center;
+ height: 100%;
+}
+
+.calendar header {
+ position: relative;
+}
+
+.calendar h2 {
+ text-transform: uppercase;
+ font-size: 15px
+
+}
+
+.calendar thead {
+ font-weight: 600;
+ text-transform: uppercase;
+ font-size: 15px;
+}
+
+.calendar tbody {
+ color: white;
+ font-size: 15px;
+}
+
+.calendar tbody td:hover {
+ border: 2px solid #00addf;
+}
+
+.calendar td {
+ border: 2px solid transparent;
+ border-radius: 50%;
+ display: inline-block;
+ height: 5em;
+ line-height: 5em;
+ text-align: center;
+ width: 5em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+ color: white;
+ opacity: .2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+ border: 2px solid #cbd1d2;
+}
+
+.current-day {
+ background: white;
+ color: #022133;
+}
+
+.event {
+ cursor: pointer;
+ position: relative;
+ height: 100%;
+ width: 100%;
+ border-radius: 50%;
+ padding-top: 0em;
+
+ background-color: Transparent;
+ border: none;
+ outline: none;
+ text-align: center;
+}
+
+.event:after {
+ background: #00addf;
+ border-radius: 50%;
+ bottom: .5em;
+ display: block;
+ content: '';
+ height: .5em;
+ left: 50%;
+ margin: -.25em 0 0 -.25em;
+ position: absolute;
+ width: .5em;
+}
+
+.event.current-day:after {
+ background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+ border: 2px solid #cbd1d2;
+ border-radius: 50%;
+ color: #cbd1d2;
+ height: 2em;
+ width: 2em;
+ font-size: .75em;
+ line-height: 1.5em;
+ text-align: center;
+ position: absolute;
+ margin: -1em;
+ left: 70%;
+ right: 70%;
+ top: 7.5em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+ background: #cbd1d2;
+ color: #f9f9f9;
+}
+
+.btn-prev {
+ left: 30%;
+}
+
+.btn-next {
+ right: 30%;
+}

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Strydes</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/calendar.css">
+	<!-- <link href="css/custom.css" rel="stylesheet"> -->
+
+
+</head>
+<body>
+	<!-- Navigation -->
+	<nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Logo and responsive toggle -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" id="brand" href="index.html">
+					<span class="glyphicon glyphicon-fire"></span>
+					STRYDES
+				</a>
+			</div>
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="aboutus.html">About Us</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li><a href="feelings.html">Mood</a></li>
+							<li><a href="calendar.html">Calendar</a></li>
+							<li><a href="questions.html">Questions</a></li>
+
+						</ul>
+					</li>
+					<li>
+						<a href="login.html">Log In</a>
+					</li>
+				</ul>
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container -->
+	</nav>
+
+
+	<!-- <div class="container"> -->
+
+
+	<div class="calendar">
+
+		<div class="prompt">
+			<h1>History</h1>
+			<p> Select a date below to view your past moods and answers. </p>
+		</div>
+		<!-- <header> -->
+			<!-- <h2 class="cal-header">September</h2> -->
+
+			<!-- <a class="btn-prev fontawesome-angle-left" href="#"></a>
+			<div class="cal-header fontawesome">SEPTEMBER</div>
+			<a class="btn-next fontawesome-angle-right" href="#"></a> -->
+			<a class="btn-prev" href="#"><</a>
+			<div class="cal-header">JANUARY</div>
+			<a class="btn-next" href="#">></a>
+
+		<!-- </header> -->
+
+		<table class="days">
+
+				<thead>
+
+					<tr>
+
+						<td class="day-heading">Mo</td>
+						<td class="day-heading">Tu</td>
+						<td class="day-heading">We</td>
+						<td class="day-heading">Th</td>
+						<td class="day-heading">Fr</td>
+						<td class="day-heading">Sa</td>
+						<td class="day-heading">Su</td>
+
+					</tr>
+
+				</thead>
+
+				<tbody>
+
+					<tr>
+						<td class="prev-month">26</td>
+						<td class="prev-month">27</td>
+						<td class="prev-month">28</td>
+						<td class="prev-month">29</td>
+						<td class="prev-month">30</td>
+						<td class="prev-month">31</td>
+						<td>
+							<button class="event" id="myBtn-1">1</button>
+						</td>
+					</tr>
+					<tr>
+						<td><button class="event">2</button></td>
+						<td><button class="event">3</button></td>
+						<td><button class="event">4</button></td>
+						<td><button class="event">5</button></td>
+						<td><button class="event">6</button></td>
+						<td><button class="event">7</button></td>
+						<td><button class="event">8</button></td>
+					</tr>
+					<tr>
+						<td><button class="event">9</button></td>
+						<td><button class="event">10</button></td>
+						<td><button class="event">11</button></td>
+						<td><button class="event">12</button></td>
+						<td><button class="event">13</button></td>
+						<td><button class="event">14</button></td>
+						<td><button class="event">15</button></td>
+					</tr>
+					<tr>
+						<td><button class="event">16</button></td>
+						<td><button class="event">17</button></td>
+						<td><button class="event">18</button></td>
+						<td><button class="event">19</button></td>
+						<td><button class="event">20</button></td>
+						<td><button class="event">21</button></td>
+						<td><button class="event">22</button></td>
+					</tr>
+
+					<tr>
+						<td class="current-day">23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+					</tr>
+					<tr>
+						<td>30</td>
+						<td>31</td>
+						<td class="next-month">1</td>
+						<td class="next-month">2</td>
+						<td class="next-month">3</td>
+						<td class="next-month">4</td>
+						<td class="next-month">5</td>
+					</tr>
+
+				</tbody>
+
+			</table>
+
+
+			<!-- The Modal -->
+			<div id="myModal-1" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div>
+						<p5>January 1, 2017</p5>
+						<span id="close-1" class="close">&times;</span>
+					</div>
+					<div class="calLeft">
+						<!-- <div class="circle"><p>60</p></div> -->
+						<canvas id="myCanvas" width=300px height=300px>60</canvas>
+						<!-- <script>
+						var canvas = document.getElementById('myCanvas');
+						var context = canvas.getContext('2d');
+						var x = canvas.width / 2;
+						var y = canvas.height / 2;
+						var radius = 100;
+						var startAngle = 0.5 * Math.PI;
+						var endAngle = 1.3 * Math.PI;
+						var counterClockwise = true;
+
+						context.beginPath();
+						context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+						context.lineWidth = 20;
+
+						context.font="60px Helvetica Neue";
+						context.fillStyle="#085078";
+						context.fillText("60", 120, 170);
+
+						// line color
+						context.strokeStyle = 'yellowgreen';
+						context.stroke();
+						</script> -->
+					</div>
+					<div class="calRight">
+						<div style="height: 110px;">
+							<button class="small-circle" id="q1">Q1</button>
+							<button class="small-circle" id="q2">Q2</button>
+							<button class="small-circle" id="q3">Q3</button>
+						</div>
+						<div class="question" id="Doctor-question"></div>
+						<div class="response" id="User-response"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+     <!-- end calendar -->
+
+	<!-- </div>  -->
+  <!-- end container -->
+
+	<!-- jQuery -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="js/jquery.easing.min.js"></script>
+
+	<!-- Custom Javascript -->
+<!-- <<<<<<< HEAD -->
+	<script src="js/calendar.js"></script>
+
+<!-- ======= -->
+	<script src="js/custom.js"></script>
+<!-- >>>>>>> origin/master -->
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+body ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #888888;
+  font-weight: 300;
+  vertical-align: top;
+}
+body :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #888888;
+  opacity: 1;
+  font-weight: 300;
+  vertical-align: top;
+}
+body ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #888888;
+  opacity: 1;
+  font-weight: 300;
+  vertical-align: top;
+}
+body :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #888888;
+  font-weight: 300;
+  vertical-align: top;
+}
+
+.calendar {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.prompt {
+  font-size: 20px;
+  margin-top: 70px;
+  color:  white;
+}
+
+.btn-prev {
+  margin-top: 90px;
+}
+
+.btn-next {
+  margin-top: 90px;
+}
+
+.days {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cal-header {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16pt;
+  margin-top: 3em;
+  color: white;
+}
+
+.day-heading {
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  text-align: center;
+  height: 70%;
+  color: black;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.calLeft{
+  float: left;
+  width: 50%;
+  height: 90%;
+}
+
+.calRight {
+  float: right;
+  width: 50%;
+  height: 90%;
+  text-align: left;
+}
+
+p5 {
+  color: #085078;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+p1 {
+  color: #085078;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+p2 {
+  color: #085078;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 16px;
+  text-align: left;
+  font-style: italic;
+}
+
+.small-circle {
+  height: 65px;
+  width: 65px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: yellowgreen;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  margin-top: 30px;
+  margin-right: 30px;
+  color: #085078;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 20px;
+}
+
+.small-circle:hover {
+  background-color: yellowgreen;
+}
+
+.small-circle:focus {outline:0;}
+
+.question {
+  height: 65px;
+  width: 100%;
+  background-color: white;
+  color: #085078;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.response {
+  background-color: white;
+  width: 100%;
+  color: #085078;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  font-size: 15px;
+  /*margin-top: 10px;*/
+  /*font-style: italic;*/
+}
+
+/*navigation bar css below*/
+
+/*#navbar{
+  font-size: 20px;
+}*/
+
+.navbar-default {
+    border-color: rgba(34,34,34,.05);
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #eb3812;
+    /*opacity: 0.5;
+    font-size: 25px;*/
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    color: #222;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: yellowgreen;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: yellowgreen!important;
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: rgba(255,255,255,.3);
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255,255,255,.7);
+        letter-spacing: 0.5em;
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #fff;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,.7);
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fff;
+    }
+
+    .navbar-default.affix {
+        border-color: #fff;
+        background-color: #fff;
+        box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.1);
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        letter-spacing: 0;
+        color: yellowgreen;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #eb3812;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: yellowgreen;
+    }
+}
+
+
+#brand {
+  font-size: 25px;
+}
+a {
+    color: white;
+    opacity: .5;
+    font-size: 15px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: white;
+    opacity: 1.0;
+}
